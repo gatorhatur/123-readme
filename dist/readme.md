@@ -1,7 +1,7 @@
-# stream connect [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+# Stream Connect [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
   ## Description
   
-  a description
+  Find your favorite videos on streaming services
   
   
   ## Table of Contents
@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  
+  - [How to Contribute](#how-to-contribute)
   - [Tests](#tests)
   - [Questions](#questions)
   
@@ -19,13 +19,18 @@
   
   ## Usage
   
-  use it like this
+  No special usage instructions
 
   
   ## License
   
-  This project is protected under a [CC0](http://creativecommons.org/publicdomain/zero/1.0/) License.
+  This project is protected under a [Unlicense](http://unlicense.org/) License.
   
+  
+
+  ## How to Contribute
+
+  Fork code and contact with enchancements and features
   
   
   ## Tests
@@ -35,5 +40,5 @@
   ## Questions
   
   [gatorhatur's GitHub](https://github.com/gatorhatur)<br>
-  
+  Email feedback: [brancdavis@gmail.com](mailto:brancdavis@gmail.com)
   
