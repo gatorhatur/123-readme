@@ -1,4 +1,4 @@
-# Stream Connect [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+# Stream  Connect [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
   
   Find your favorite videos on streaming services
@@ -19,18 +19,18 @@
   
   ## Usage
   
-  No special usage instructions
+  No special usage instructions, use the site!
 
   
   ## License
   
-  This project is protected under a [Unlicense](http://unlicense.org/) License.
+  This project is protected under a [MIT](https://opensource.org/licenses/MIT) License.
   
   
 
   ## How to Contribute
 
-  Fork code and contact with enchancements and features
+  Fork the code and contact me with enhancements and features
   
   
   ## Tests
