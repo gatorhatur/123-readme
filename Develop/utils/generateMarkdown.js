@@ -80,7 +80,7 @@ function addContributeToContents(canContribute) {
     return ``
   }
 
-  return `- [How to Contribute](#how)`
+  return `- [How to Contribute](#how-to-contribute)`
 }
 
 // TODO: Create a function to generate markdown for README

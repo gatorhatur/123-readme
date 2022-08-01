@@ -1,7 +1,7 @@
-# stream connect [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+# stream connect [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
   ## Description
   
-  cool videos are here
+  a description
   
   
   ## Table of Contents
@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [How to Contribute](#how)
+  
   - [Tests](#tests)
   - [Questions](#questions)
   
@@ -19,18 +19,13 @@
   
   ## Usage
   
-  This is how to use it
+  use it like this
 
   
   ## License
   
-  This project is protected under a [Unlicense](http://unlicense.org/) License.
+  This project is protected under a [CC0](http://creativecommons.org/publicdomain/zero/1.0/) License.
   
-  
-
-  ## How to Contribute
-
-  Please fork the repo and message me with any suggestions/imrpovements to code.
   
   
   ## Tests
@@ -40,5 +35,5 @@
   ## Questions
   
   [gatorhatur's GitHub](https://github.com/gatorhatur)<br>
-  Questions and feedback may be emailed to 
+  
   
