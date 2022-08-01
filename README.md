@@ -19,7 +19,9 @@ Generating readmes can be tedious and time consuming. Every developer would pref
 
 `npm index.js`
 
-See [Demo Video](https://drive.google.com/file/d/14ru6Nk5iqIrZD2hG8syhM2m_fHLAiiLR/view)
+readme.md will be found in ./dist directory. [Sample Readme](./dist/readme.md)
+
+See [Demo Video](https://drive.google.com/file/d/1GSkFBeaZkpR2Hd2uJhpQES5N_KaGLfo5/view)
 
 ## Links
 
