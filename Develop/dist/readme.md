@@ -1,41 +1,7 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (!license) {
-    return;
-  }
-  return 'A Badge Icon';
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (!license) {
-    return;
-  }
-  return 'A link'
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (!license) {
-    return;
-  }
-
-  return `
-  ## License
-  
-  ${renderLicenseBadge(license)}: ${renderLicenseLink(license)} [https://choosealicense.com/](https://choosealicense.com/)
-  `
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+# Stream Connect
   ## Description
   
-  ${data.description}
+  Description
   
   ## Table of Contents
   
@@ -46,11 +12,11 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data.installInstructions}
+  ayo!
   
   ## Usage
   
-  ${data.usage}
+  nope
   
   To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
   
@@ -64,7 +30,11 @@ function generateMarkdown(data) {
   
   If you followed tutorials, include links to those here as well.
   
-  ${renderLicenseSection(data.license)}
+  
+  ## License
+  
+  A Badge Icon: A link [https://choosealicense.com/](https://choosealicense.com/)
+  
   
   ## Features
   
@@ -77,7 +47,3 @@ function generateMarkdown(data) {
   ## Tests
   
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-`;
-}
-
-module.exports = generateMarkdown;
