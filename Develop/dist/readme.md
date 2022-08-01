@@ -1,7 +1,7 @@
-# test -- [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+# help [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
   ## Description
   
-  test
+  help
   
   
   ## Table of Contents
@@ -19,23 +19,21 @@
   
   ## Usage
   
-  usage
-  
+  use it this way
+
   
   ## License
   
-  This project is protected under a [Unlicense][A link] License.
+  This project is protected under a [ISC](https://opensource.org/licenses/ISC) License.
   
-
-  ## How to Contribute
-  
-  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+  undefined
   
   ## Tests
   
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  Test examples coming soon!
 
   ## Questions
-
-  Github User Name w/ Repo Link
-  Email Address (mailto:)
+  
+  [gatorhatur's GitHub](https://github.com/gatorhatur)<br>
+  Questions and feedback may be emailed to [brancdavis@gmail.com](mailto:brancdavis@gmail.com)
+  

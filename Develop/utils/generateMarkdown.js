@@ -24,7 +24,17 @@ function renderLicenseLink(license) {
   if (!license) {
     return;
   }
-  return 'A link'
+  
+  switch (license) {
+    case 'MIT':
+      return 'https://opensource.org/licenses/MIT'
+    case 'CC0':
+      return 'http://creativecommons.org/publicdomain/zero/1.0/'
+    case 'Unlicense':
+      return 'http://unlicense.org/'
+    case 'ISC':
+      return 'https://opensource.org/licenses/ISC'
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -41,18 +51,46 @@ function renderLicenseSection(license) {
   `
 }
 
-function generateQuestions(user, email) {
+var generateEmail = (email) => {
+  return email ? `[${email}](mailto:${email})` : ''
+}
+
+function generateQuestionsSection(user, email) {
   return `
-    [${user}](https://github.com/${user})
+  [${user}'s GitHub](https://github.com/${user})<br>
+  Questions and feedback may be emailed to ${generateEmail(email)}
   `
+}
+
+function generateContributeSection(canContribute, contribute) {
+  if (!canContribute) {
+    return
+  }
+
+  return `
+
+  ## How to Contribute
+
+  ${contribute}
+  `
+}
+
+function addContributeToContents(canContribute) {
+  if (!canContribute) {
+    return
+  }
+
+  return `- [How to Contribute](#how)`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} -- ${renderLicenseBadge(data.license)}
+  let { username, canContact, email, title, description, installInstructions, usage, license, tests,canContribute,contribute } = data;
+
+  return `# ${title} ${renderLicenseBadge(license)}
   ## Description
   
-  ${data.description}
+  ${description}
   
   
   ## Table of Contents
@@ -60,32 +98,27 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [How to Contribute](#how)
+  ${addContributeToContents(canContribute)}
   - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
   
-  ${data.installInstructions}
+  ${installInstructions}
   
   ## Usage
   
-  ${data.usage}
-  
-  ${renderLicenseSection(data.license)}
+  ${usage}
 
-  ## How to Contribute
-  
-  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+  ${renderLicenseSection(license)}
+  ${generateContributeSection(canContribute,contribute)}
   
   ## Tests
   
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  ${tests}
 
   ## Questions
-
-  Github User Name w/ Repo Link
-  Email Address (mailto:)
+  ${generateQuestionsSection(username,email)}
 `;
 }
 

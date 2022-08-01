@@ -80,6 +80,26 @@ const questions = [
         question: 'What license is this project covered under?',
         choices: ['MIT','CC0','ISC','Unlicense',],
         default: 'MIT'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        question: 'Please provide some example tests',
+        default: 'Test examples coming soon!'
+    },
+    {
+        type: 'confirm',
+        name: 'canContribute',
+        question: 'Would you like to provide contribution instructions?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'contribute',
+        question: 'Provide constribution instructions',
+        when: ({ canContribute }) => {
+            return canContribute ? true : false
+        }
     }
 ];
 
