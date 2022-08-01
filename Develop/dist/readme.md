@@ -1,7 +1,7 @@
-# help [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+# stream connect [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
   ## Description
   
-  help
+  cool videos are here
   
   
   ## Table of Contents
@@ -15,18 +15,23 @@
   
   ## Installation
   
-  There are not special installation instructions
+  There are no special installation instructions
   
   ## Usage
   
-  use it this way
+  This is how to use it
 
   
   ## License
   
-  This project is protected under a [ISC](https://opensource.org/licenses/ISC) License.
+  This project is protected under a [Unlicense](http://unlicense.org/) License.
   
-  undefined
+  
+
+  ## How to Contribute
+
+  Please fork the repo and message me with any suggestions/imrpovements to code.
+  
   
   ## Tests
   
@@ -35,5 +40,5 @@
   ## Questions
   
   [gatorhatur's GitHub](https://github.com/gatorhatur)<br>
-  Questions and feedback may be emailed to [brancdavis@gmail.com](mailto:brancdavis@gmail.com)
+  Questions and feedback may be emailed to 
   

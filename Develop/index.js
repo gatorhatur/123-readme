@@ -46,7 +46,7 @@ const questions = [
                 return true;
             }
             else {
-                console.log("Please enter a name!");
+                console.log("You must enter a project/repo title");
             }
         }
     },
@@ -59,7 +59,7 @@ const questions = [
                 return true;
             }
             else {
-                console.log("Please enter a name!");
+                console.log("You must provide a description for your project/repo.");
             }
         }
     },
@@ -67,12 +67,13 @@ const questions = [
         type: 'input',
         name: 'installInstructions',
         question: 'Provide any installation instructions that a user would need to use your app.',
-        default: 'There are not special installation instructions'
+        default: 'There are no special installation instructions'
     },
     {
         type: 'input',
         name: 'usage',
         question: 'Provide any usage information',
+        validate: userInput => userInput ? true : console.log("Please provide some usage information")
     },
     {
         type: 'list',

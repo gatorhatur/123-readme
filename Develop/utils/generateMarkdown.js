@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (!license) {
-    return;
+    return ``
   }
 
   switch (license) {
@@ -22,7 +22,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (!license) {
-    return;
+    return ``
   }
   
   switch (license) {
@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (!license) {
-    return;
+    return ``
   }
 
   return `
@@ -52,19 +52,19 @@ function renderLicenseSection(license) {
 }
 
 var generateEmail = (email) => {
-  return email ? `[${email}](mailto:${email})` : ''
+  return email ? `Email feedback: [${email}](mailto:${email})` : ''
 }
 
 function generateQuestionsSection(user, email) {
   return `
   [${user}'s GitHub](https://github.com/${user})<br>
-  Questions and feedback may be emailed to ${generateEmail(email)}
+  ${generateEmail(email)}
   `
 }
 
 function generateContributeSection(canContribute, contribute) {
   if (!canContribute) {
-    return
+    return ``
   }
 
   return `
@@ -77,7 +77,7 @@ function generateContributeSection(canContribute, contribute) {
 
 function addContributeToContents(canContribute) {
   if (!canContribute) {
-    return
+    return ``
   }
 
   return `- [How to Contribute](#how)`
