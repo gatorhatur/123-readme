@@ -7,6 +7,38 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
+        name: 'username',
+        question: 'What is your GitHub Username? (Required)',
+        validate: userInput => {
+            if (userInput) {
+                return true;
+            }
+            else {
+                console.log("You must enter a github username!");
+            }
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'canContact',
+        question: 'Can users contact you with questions or suggestions?',
+        default: true
+    },
+    {
+        type: 'input',
+        name: 'email',
+        question: 'Please provide your email address',
+        when: ({ canContact }) => {
+            if (canContact) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
         name: 'title',
         question: 'What is the title of the project/repo? (Required)',
         validate: userInput => {
@@ -34,7 +66,8 @@ const questions = [
     {
         type: 'input',
         name: 'installInstructions',
-        question: 'Provide any installation instructions that a user would need to use your app. (Required)',
+        question: 'Provide any installation instructions that a user would need to use your app.',
+        default: 'There are not special installation instructions'
     },
     {
         type: 'input',
@@ -42,10 +75,10 @@ const questions = [
         question: 'Provide any usage information',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         question: 'What license is this project covered under?',
-        choices: ['MIT',],
+        choices: ['MIT','CC0','ISC','Unlicense',],
         default: 'MIT'
     }
 ];
